@@ -1,6 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap"
 import {semuaKelas} from "../data/index"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom'
+
 
 import FaqComponent from "../components/FaqComponent"
 
@@ -23,16 +24,11 @@ const NewsPage = () => {
                 <Col key={news.id} className="shadow rounded" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={news.delay}>
                   <img src={news.image} alt="Lol" className="rounded-top" />
                     <div className="star mb-3 px-3">
-                      <i className={news.star1}></i>
-                      <i className={news.star2}></i>
-                      <i className={news.star3}></i>
-                      <i className={news.star4}></i>
-                      <i className={news.star5}></i>
                     </div>
                         <h5 className="mb-5 px-3">{news.title} <br />{news.date}.</h5>
                         <div className="ket d-flex justify-content-between align-items-center px-3 pb-3">
                             <p className="m-0 text-primary fw-bold">{news.Category}</p>
-                          <button className="btn btn-info rounded-1" onClick={() => navigate("/detail")}>{news.buy}</button>
+                          <button className="btn btn-info rounded-1" onClick={() => navigate(`/detail/${news.id}`)}>{news.buy}</button>
                         </div>
                   </Col>
                   )
