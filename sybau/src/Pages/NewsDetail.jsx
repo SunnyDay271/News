@@ -25,8 +25,9 @@ const NewsDetail = () => {
               <p className="animate__animated animate__backInUp animate__delay-2s">{posts.desc}</p>
             </Col>
           </Row>
-          
-          { testimonial.map((data) => {
+
+          //Pemisah Antar Berita
+          //{ testimonial.map((data) => {
         return(
           <Col key={data.id} className="mb-5 border border-p-5">
             <p className="desc shadow animate__animated animate__backInUp animate__delay-2s">{data.desc}</p>
@@ -37,7 +38,7 @@ const NewsDetail = () => {
                 <p className='text-md animate__animated animate__backInUp animate__delay-1s"'>{data.skill}</p>
               </div>
             </div>
-          </Col>
+          //</Col>
         )
       })}
         </Container>
