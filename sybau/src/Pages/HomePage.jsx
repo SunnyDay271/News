@@ -39,7 +39,7 @@ const HomePage = () => {
               <button className="btn btn-outline-info btn-lg rounded-1 mb-xs0 mb-2 animate__animated animate__fadeInLeft animate__delay-1s" onClick={() => navigate("/faq")}>Lihat FAQ</button>
             </Col>
             <Col lg="6" className="pt-lg-0 pt-5">
-              <img src="./public/karate_stand.png" alt="karate-img" className="animate__animated animate__fadeInLeft animate__delay-2s" />
+              <img src="./karate_stand.png" alt="karate-img" className="animate__animated animate__fadeInLeft animate__delay-2s" />
             </Col>
           </Row>
         </Container>
